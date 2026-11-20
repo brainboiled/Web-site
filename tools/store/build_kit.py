@@ -14,10 +14,18 @@ PLAY_LIMITS = {'title': 30, 'short': 80, 'full': 4000, 'notes': 500}
 APPLE_LIMITS = {'name': 30, 'subtitle': 30, 'promo': 170, 'keywords': 100, 'description': 4000,
                 'whatsnew': 4000, 'iap_name': 30, 'iap_desc': 45}
 APPLE_LOCALE = {'fr-FR': 'fr-FR', 'en-US': 'en-US', 'es-ES': 'es-ES', 'pt-BR': 'pt-BR', 'de-DE': 'de-DE',
-                'it-IT': 'it', 'ja-JP': 'ja', 'pl-PL': 'pl', 'nl-NL': 'nl-NL'}
+                'it-IT': 'it', 'ja-JP': 'ja', 'pl-PL': 'pl', 'nl-NL': 'nl-NL', 'pt-PT': 'pt-PT', 'ru-RU': 'ru',
+                'el-GR': 'el', 'id': 'id', 'fi-FI': 'fi', 'ca': 'ca', 'sv-SE': 'sv', 'da-DK': 'da', 'no-NO': 'no'}
 LANG_NAME = {'fr-FR': 'Français (France)', 'en-US': 'Anglais (États-Unis)', 'es-ES': 'Espagnol (Espagne)',
              'pt-BR': 'Portugais (Brésil)', 'de-DE': 'Allemand', 'it-IT': 'Italien', 'ja-JP': 'Japonais',
-             'pl-PL': 'Polonais', 'nl-NL': 'Néerlandais'}
+             'pl-PL': 'Polonais', 'nl-NL': 'Néerlandais', 'pt-PT': 'Portugais (Portugal)', 'ru-RU': 'Russe',
+             'el-GR': 'Grec', 'bg': 'Bulgare', 'id': 'Indonésien', 'fi-FI': 'Finnois', 'ca': 'Catalan',
+             'sv-SE': 'Suédois', 'da-DK': 'Danois', 'no-NO': 'Norvégien'}
+
+
+def shots_lang(lc, v):
+    """dossier des captures d'une langue de fiche : clé « shots » du kit, sinon les 2 premières lettres"""
+    return v.get('shots', lc[:2])
 
 
 def write(path, text):
@@ -51,6 +59,8 @@ def main(repo, visuels, out):
         for f, lim in PLAY_LIMITS.items():
             if len(v['play'][f]) > lim:
                 errors.append(f'Play {lc} {f} : {len(v["play"][f])} > {lim}')
+        if 'apple' not in v:  # langue que l'App Store ne propose pas
+            continue
         for f, lim in APPLE_LIMITS.items():
             if f in v['apple'] and len(v['apple'][f]) > lim:
                 errors.append(f'Apple {lc} {f} : {len(v["apple"][f])} > {lim}')
@@ -62,7 +72,7 @@ def main(repo, visuels, out):
     if os.path.exists(out):
         shutil.rmtree(out)
     gp, ap = os.path.join(out, 'Google Play'), os.path.join(out, 'App Store')
-    n_shots = len(os.listdir(os.path.join(visuels, 'play', 'fr')))
+    n_shots = len(os.listdir(os.path.join(visuels, 'play', shots_lang(k['default_lang'], L[k['default_lang']]))))
     has_ipad = os.path.isdir(os.path.join(visuels, 'ipad'))
 
     # ---------- Google Play ----------
@@ -94,7 +104,7 @@ def main(repo, visuels, out):
         write(os.path.join(d, '2-description-courte.txt'), p['short'])
         write(os.path.join(d, '3-description-complete.txt'), p['full'])
         write(os.path.join(d, '4-notes-de-version.txt'), p['notes'])
-        lg = lc[:2]
+        lg = shots_lang(lc, v)
         fp = os.path.join(repo, a['feature_lang'].format(lang=lg))
         rgb_copy(fp if os.path.exists(fp) else os.path.join(repo, a['feature']),
                  os.path.join(d, 'image-presentation-1024x500.png'), (1024, 500))
@@ -163,6 +173,8 @@ Les captures sont des rendus réels de l'appli (code de l'appli exécuté avec d
 | Achat intégré | {(k['iap']['id'] + ' — ' + k['iap']['type']) if k.get('iap') else 'aucun'} |
 """)
     for lc, v in L.items():
+        if 'apple' not in v:
+            continue
         d = os.path.join(ap, APPLE_LOCALE[lc])
         p = v['apple']
         write(os.path.join(d, '1-nom.txt'), p['name'])
@@ -174,7 +186,7 @@ Les captures sont des rendus réels de l'appli (code de l'appli exécuté avec d
         if 'iap_name' in p:
             write(os.path.join(d, 'achat-nom.txt'), p['iap_name'])
             write(os.path.join(d, 'achat-description.txt'), p['iap_desc'])
-        lg = lc[:2]
+        lg = shots_lang(lc, v)
         sd = os.path.join(d, 'captures-iphone-6.9')
         os.makedirs(sd)
         for i in range(1, n_shots + 1):
@@ -188,7 +200,10 @@ Les captures sont des rendus réels de l'appli (code de l'appli exécuté avec d
                 s = os.path.join(visuels, 'ipad', lg, f'{i}.png')
                 check_image(s, (2064, 2752))
                 rgb_copy(s, os.path.join(sd, f'{i}.png'))
-    loc_list = ', '.join(f'`{APPLE_LOCALE[lc]}`' for lc in L)
+    loc_list = ', '.join(f'`{APPLE_LOCALE[lc]}`' for lc, v in L.items() if 'apple' in v)
+    no_apple = [LANG_NAME[lc] for lc, v in L.items() if 'apple' not in v]
+    if no_apple:
+        loc_list += ' (pas de fiche App Store en ' + ', '.join(no_apple).lower() + " : la langue n'est pas proposée par App Store Connect)"
     ipad_line = ("   - iPad 13 pouces : `captures-ipad-13/1.png` à `" + str(n_shots) + ".png` (2064 × 2752)\n") if has_ipad else ''
     write(os.path.join(ap, '00-A-LIRE-App-Store.md'), f"""
 # {app} — publication sur l'App Store

@@ -19,6 +19,17 @@ from i18n import LANGS, LANG_NAMES, SITE, CONTACT, HOME, APPS
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OWN_PAGES = {"flowday"}  # applis qui ont déjà leurs propres pages
+# Langues supplémentaires, pour les seules politiques de confidentialité des applis traduites
+# au-delà des 9 langues du site (MorseTree). Le bandeau et le pied de page restent en anglais.
+EXTRA_LANGS = ["ru", "el", "bg", "id", "fi", "ca", "sv", "da", "nb"]
+LANG_NAMES = dict(LANG_NAMES, ru="Русский", el="Ελληνικά", bg="Български", id="Bahasa Indonesia",
+                  fi="Suomi", ca="Català", sv="Svenska", da="Dansk", nb="Norsk bokmål")
+ALL_LANGS = LANGS + EXTRA_LANGS
+
+
+def H(key, lang):
+    """texte commun du site, en anglais pour une langue hors des 9 du site"""
+    return HOME[key].get(lang, HOME[key]["en"])
 URLS = []
 
 
@@ -74,7 +85,7 @@ def head(lang, title, desc, canonical_path, alternates, app=None, icon=None, og_
 
 def lang_switch(lang, paths):
     items = []
-    for l in LANGS:
+    for l in ALL_LANGS:
         if l not in paths:
             continue
         name = LANG_NAMES[l]
@@ -82,15 +93,15 @@ def lang_switch(lang, paths):
             items.append(f'<li><span aria-current="true">{name}</span></li>')
         else:
             items.append(f'<li><a href="{paths[l]}" hreflang="{l}" lang="{l}">{name}</a></li>')
-    return (f'<details class="langs"><summary aria-label="{HOME["language"][lang]}">{LANG_NAMES[lang]}</summary>'
+    return (f'<details class="langs"><summary aria-label="{H("language", lang)}">{LANG_NAMES[lang]}</summary>'
             f'<ul>{"".join(items)}</ul></details>')
 
 
 def topbar(lang, paths, app=None):
-    home = f"/{lp(lang)}"
+    home = f"/{lp(lang)}" if lang in LANGS else "/"
     if app:
         mark = (f'<a class="brandmark" href="{home}"><img src="/assets/brand/brainboiled-symbole.png" alt="" width="32" height="28">'
-                f'<span><span class="by">{HOME["an_app_by"][lang]} </span><strong>BrainBoiled</strong></span></a>')
+                f'<span><span class="by">{H("an_app_by", lang)} </span><strong>BrainBoiled</strong></span></a>')
     else:
         mark = (f'<a class="brandmark" href="{home}"><img src="/assets/brand/brainboiled-logo-horizontal.png" '
                 f'alt="BrainBoiled" width="126" height="32"></a>')
@@ -98,8 +109,8 @@ def topbar(lang, paths, app=None):
 
 
 def site_foot(lang, app=None):
-    home = f"/{lp(lang)}"
-    links = [f'<a href="mailto:{CONTACT}">{HOME["contact"][lang]}</a>']
+    home = f"/{lp(lang)}" if lang in LANGS else "/"
+    links = [f'<a href="mailto:{CONTACT}">{H("contact", lang)}</a>']
     return (f'<footer class="site-foot"><div class="wrap">'
             f'<a href="{home}"><img src="/assets/brand/brainboiled-logo-horizontal.png" alt="BrainBoiled" width="110" height="28"></a>'
             f'<nav>{"".join(links)}</nav><span>© 2026 BrainBoiled</span></div></footer>')
@@ -194,6 +205,9 @@ PRIVACY_LABEL = {
     "en": "Privacy policy", "fr": "Politique de confidentialité", "de": "Datenschutzerklärung",
     "pt": "Política de privacidade", "es": "Política de privacidad", "ja": "プライバシーポリシー",
     "it": "Informativa sulla privacy", "nl": "Privacybeleid", "pl": "Polityka prywatności",
+    "ru": "Политика конфиденциальности", "el": "Πολιτική απορρήτου", "bg": "Политика за поверителност",
+    "id": "Kebijakan privasi", "fi": "Tietosuojakäytäntö", "ca": "Política de privadesa",
+    "sv": "Integritetspolicy", "da": "Privatlivspolitik", "nb": "Personvernerklæring",
 }
 
 
@@ -202,7 +216,7 @@ def privacy_langs(slug):
     d = os.path.join(LEGAL_DIR, slug)
     if not os.path.isdir(d):
         return []
-    return [l for l in LANGS if os.path.exists(os.path.join(d, f"privacy.{l}.html"))]
+    return [l for l in ALL_LANGS if os.path.exists(os.path.join(d, f"privacy.{l}.html"))]
 
 
 def privacy_path(slug, lang):
@@ -217,7 +231,9 @@ def privacy_path(slug, lang):
 def build_privacy():
     for a in APPS:
         s = a["slug"]
-        if s in OWN_PAGES:
+        # Une appli à pages propres (FlowDay) garde ses pages, sauf la politique si elle est
+        # tenue dans tools/legal/<appli>/.
+        if s in OWN_PAGES and not os.path.isdir(os.path.join(LEGAL_DIR, s)):
             continue
         langs = privacy_langs(s)
         paths = {l: f"/{s}/{lp(l)}privacy/" for l in langs}
@@ -228,7 +244,7 @@ def build_privacy():
 <body data-app="{s}" class="app-page legal">
 {topbar(lang, paths, app=s)}
 <main class="wrap">
-  <a class="back" href="/{s}/{lp(lang)}">← {a['name']}</a>
+  <a class="back" href="/{s}/{lp(lang) if lang in LANGS else ''}">← {a['name']}</a>
 {body}</main>
 {site_foot(lang, app=s)}
 </body>

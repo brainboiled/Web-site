@@ -1,0 +1,3 @@
+Nunito ExtraBold (800) et Bold (700), sous-ensembles latin + latin-ext de assets/fonts/ réunis
+en un seul fichier (fontTools.merge) pour les cadres des captures (polonais compris).
+Police sous licence SIL Open Font License 1.1 (Nunito, Vernon Adams et contributeurs).

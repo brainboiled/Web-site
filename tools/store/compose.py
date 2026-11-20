@@ -4,6 +4,7 @@ Usage : python3 compose.py config.json captures_dir sortie_dir
 config.json : {
   "bg": [r,g,b], "bg_top": [r,g,b], "accent": [r,g,b], "text": [r,g,b], "frame": [r,g,b],
   "title_font": chemin TTF, "body_font": chemin TTF, "cjk_bold": ..., "cjk_regular": ...,
+  "fonts_by_lang": {"ru": [titre TTF, texte TTF]},   # facultatif : écritures absentes des polices du cadre
   "shots": ["3_sim", ...],                         # ordre des captures
   "captions": {"fr": [["titre", "sous-titre"], ...], ...}
 }
@@ -40,7 +41,7 @@ def wrap(d, text, font, maxw, ja):
     return best[1]
 
 
-def compose(cfg, shot_path, title, sub, size, ja):
+def compose(cfg, shot_path, title, sub, size, ja, lang=''):
     W, H = size
     s = W / 1080
     im = Image.new('RGB', (W, H), tuple(cfg['bg']))
@@ -51,6 +52,8 @@ def compose(cfg, shot_path, title, sub, size, ja):
         d.line([(0, y), (W, y)], fill=tuple(int(bg[i] + (top_c[i] - bg[i]) * k) for i in range(3)))
     tfp = cfg['cjk_bold'] if ja else cfg['title_font']
     sfp = cfg['cjk_regular'] if ja else cfg['body_font']
+    if lang in cfg.get('fonts_by_lang', {}):  # écriture que la police du cadre n'a pas (cyrillique, grec…)
+        tfp, sfp = cfg['fonts_by_lang'][lang]
     tsize = int((cfg.get('title_size', 74) - (6 if ja else 0)) * s)
     margin = int(60 * s)
     tf = ImageFont.truetype(tfp, tsize)
@@ -92,7 +95,7 @@ def main(cfg_path, shots_dir, out, stores='play,apple'):
                 size = SIZES[store]
                 o = os.path.join(out, store, lang)
                 os.makedirs(o, exist_ok=True)
-                im = compose(cfg, src, t, sub, size, ja)
+                im = compose(cfg, src, t, sub, size, ja, lang)
                 if store == 'play':
                     im.save(os.path.join(o, f'{i + 1}.jpg'), quality=92)
                 else:

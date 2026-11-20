@@ -13,6 +13,7 @@ Source du logo : création Canva « Identité visuelle Brainboiled ». Les fichi
 - « brain » + « boiled » : un cerveau en ébullition, qui bouillonne d'idées. Jamais « Brain Boiled » en deux mots, jamais « BB ».
 - Domaines : **brainboiled.com** (site) et **brainboiled.app** (redirige vers le .com).
 - Noms des applis, à écrire exactement ainsi, dans toutes les langues : **FlowDay**, **Diafra**, **Origins**, **MorseTree**, **RingWise**.
+- Adresses mail (toutes redirigées vers la même boîte par Cloudflare Email Routing) : contact@brainboiled.com pour le studio, et une adresse par appli : flowday@, diafra@, origins@, morsetree@, ringwise@brainboiled.com. Chaque appli affiche la sienne sur son site et dans sa fiche Play Store.
 - Identifiants d'applis : `com.brainboiled.<appli>` pour toutes les nouvelles applis (FlowDay garde `fr.flowday`, MorseTree `fr.MorseTree` : un identifiant publié ne change plus).
 
 ## 2. La signature

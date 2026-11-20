@@ -40,6 +40,7 @@ Un cerveau vu de dessus dont les deux hémisphères dessinent deux « b » reli�
 | `brainboiled-logo-clair.png` | 6 | Version bleu nuit pour fond clair (documents, factures) |
 | `brainboiled-icone-app-512.png` | 3 | Icône carrée (page développeur Google Play, réseaux) |
 | `og-brainboiled.jpg` | 7 | Image de partage 1200 × 630 |
+| `brainboiled-entete-play-4096x2304.png` | 7 | En-tête de la page développeur Google Play (4096 × 2304, sans transparence) : logo, signature, icônes des cinq applis |
 
 Règles :
 - Zone de protection : au moins la hauteur du « B » de « Boiled » autour du logo.

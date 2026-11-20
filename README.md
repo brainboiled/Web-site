@@ -8,7 +8,7 @@ Site de l'éditeur **brainboiled** : un accueil qui présente les applis, et un 
 | `flowday/` | Site FlowDay, repris de flowdayapp.com (9 langues, pages légales, vidéos) |
 | `diafra/`, `origins/`, `morsetree/`, `ringwise/` | Pages d'attente (générées) en attendant leurs vraies pages |
 | `assets/css/brainboiled.css` | La seule feuille de style ; un bloc `[data-app="…"]` par appli |
-| `assets/brand/` | Logos brainboiled (SVG tirés de la création Canva) |
+| `assets/brand/` | Logos brainboiled (exports de la création Canva, fond retiré) |
 | `assets/apps/` | Icônes des applis |
 | `assets/fonts/` | Polices auto-hébergées |
 | `BRAND.md` | Charte brainboiled et règles communes aux applis |

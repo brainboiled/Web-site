@@ -42,8 +42,7 @@ def head(lang, title, desc, canonical_path, alternates, app=None, icon=None, og_
                  f'<link rel="apple-touch-icon" href="/assets/apps/{app}-apple-touch.png">')
         theme = {"flowday": "#123F4E", "diafra": "#16110A", "origins": "#0B0E1C", "morsetree": "#11151E", "ringwise": "#161A20"}[app]
     else:
-        icons = ('<link rel="icon" type="image/svg+xml" href="/assets/brand/brainboiled-symbol.svg">\n'
-                 '<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">\n'
+        icons = ('<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">\n'
                  '<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">')
         theme = "#041431"
     URLS.append(canonical_path)
@@ -88,11 +87,11 @@ def lang_switch(lang, paths):
 def topbar(lang, paths, app=None):
     home = f"/{lp(lang)}"
     if app:
-        mark = (f'<a class="brandmark" href="{home}"><img src="/assets/brand/brainboiled-symbol.svg" alt="" width="34" height="28">'
+        mark = (f'<a class="brandmark" href="{home}"><img src="/assets/brand/brainboiled-symbole.png" alt="" width="32" height="28">'
                 f'<span><span class="by">{HOME["an_app_by"][lang]} </span><strong>brainboiled</strong></span></a>')
     else:
-        mark = (f'<a class="brandmark" href="{home}"><img src="/assets/brand/brainboiled-logo-horizontal-on-dark.svg" '
-                f'alt="brainboiled" width="170" height="28"></a>')
+        mark = (f'<a class="brandmark" href="{home}"><img src="/assets/brand/brainboiled-logo-horizontal.png" '
+                f'alt="brainboiled" width="126" height="32"></a>')
     return f'<div class="topbar"><div class="wrap">{mark}{lang_switch(lang, paths)}</div></div>'
 
 
@@ -100,7 +99,7 @@ def site_foot(lang, app=None):
     home = f"/{lp(lang)}"
     links = [f'<a href="mailto:{CONTACT}">{HOME["contact"][lang]}</a>']
     return (f'<footer class="site-foot"><div class="wrap">'
-            f'<a href="{home}"><img src="/assets/brand/brainboiled-logo-horizontal-on-dark.svg" alt="brainboiled" width="134" height="22"></a>'
+            f'<a href="{home}"><img src="/assets/brand/brainboiled-logo-horizontal.png" alt="brainboiled" width="110" height="28"></a>'
             f'<nav>{"".join(links)}</nav><span>© 2026 brainboiled</span></div></footer>')
 
 
@@ -128,9 +127,8 @@ def build_home():
 {topbar(lang, paths)}
 <main>
   <header class="hero wrap">
-    <img class="logo" src="/assets/brand/brainboiled-logo-stacked-on-dark.svg" alt="brainboiled" width="320" height="200">
+    <img class="logo" src="/assets/brand/brainboiled-logo-empile.png" alt="brainboiled" width="360" height="221">
     <h1>{HOME['tagline'][lang]}</h1>
-    <p class="lead">{HOME['lead'][lang]}</p>
   </header>
   <section class="section wrap" id="apps">
     <h2 class="section-title">{HOME['apps_title'][lang]}</h2>

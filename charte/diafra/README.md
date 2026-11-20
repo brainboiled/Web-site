@@ -18,4 +18,4 @@ Résumé pour le site :
 
 Police : Roboto (Bold pour le nom et les titres). Ton : tutoiement, phrases courtes, verbes d'action.
 
-Une seule mise à jour à faire : sur la page « L'éditeur », remplacer la signature « Innovation technologique, applications grand public » par la nouvelle : « L'esprit en ébullition — Des applis pour apprendre, s'organiser et progresser ».
+Une seule mise à jour à faire : sur la page « L'éditeur », remplacer la signature « Innovation technologique, applications grand public » par le sous-titre officiel : « Des idées en ébullition, des applis pour le quotidien ».

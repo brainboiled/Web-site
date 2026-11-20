@@ -11,28 +11,27 @@ SITE = "https://brainboiled.com"
 CONTACT = "contact@brainboiled.com"
 
 HOME = {
+    # Sous-titre officiel (création Canva « Identité visuelle Brainboiled ») : le français fait foi.
     "title": {
-        "en": "brainboiled — Minds on the boil", "fr": "brainboiled — L'esprit en ébullition",
-        "de": "brainboiled — Hirn auf Hochtouren", "pt": "brainboiled — A mente em ebulição",
-        "es": "brainboiled — La mente en ebullición", "ja": "brainboiled — アイデアが沸き立つ",
-        "it": "brainboiled — La mente in ebollizione", "nl": "brainboiled — Een brein dat bruist",
-        "pl": "brainboiled — Umysł na pełnych obrotach"},
+        "en": "brainboiled — Ideas on the boil, apps for everyday life",
+        "fr": "brainboiled — Des idées en ébullition, des applis pour le quotidien",
+        "de": "brainboiled — Ideen, die brodeln, Apps für den Alltag",
+        "pt": "brainboiled — Ideias em ebulição, apps para o dia a dia",
+        "es": "brainboiled — Ideas en ebullición, apps para el día a día",
+        "ja": "brainboiled — 沸き立つアイデアを、毎日のアプリに",
+        "it": "brainboiled — Idee in ebollizione, app per tutti i giorni",
+        "nl": "brainboiled — Bruisende ideeën, apps voor elke dag",
+        "pl": "brainboiled — Kipiące pomysły, aplikacje na co dzień"},
     "tagline": {
-        "en": "Minds on the <span class=grad>boil</span>", "fr": "L'esprit en <span class=grad>ébullition</span>",
-        "de": "Hirn auf <span class=grad>Hochtouren</span>", "pt": "A mente em <span class=grad>ebulição</span>",
-        "es": "La mente en <span class=grad>ebullición</span>", "ja": "アイデアが<span class=grad>沸き立つ</span>",
-        "it": "La mente in <span class=grad>ebollizione</span>", "nl": "Een brein dat <span class=grad>bruist</span>",
-        "pl": "Umysł na <span class=grad>pełnych obrotach</span>"},
-    "lead": {
-        "en": "Apps to learn, get organised and improve.",
-        "fr": "Des applis pour apprendre, s'organiser et progresser.",
-        "de": "Apps, um zu lernen, sich zu organisieren und besser zu werden.",
-        "pt": "Apps para aprender, organizar-se e evoluir.",
-        "es": "Apps para aprender, organizarse y mejorar.",
-        "ja": "学ぶ・整える・上達するためのアプリ。",
-        "it": "App per imparare, organizzarsi e migliorare.",
-        "nl": "Apps om te leren, je te organiseren en beter te worden.",
-        "pl": "Aplikacje do nauki, organizacji i rozwoju."},
+        "en": "Ideas on the boil, apps for everyday life",
+        "fr": "Des idées en ébullition, des applis pour le quotidien",
+        "de": "Ideen, die brodeln, Apps für den Alltag",
+        "pt": "Ideias em ebulição, apps para o dia a dia",
+        "es": "Ideas en ebullición, apps para el día a día",
+        "ja": "沸き立つアイデアを、毎日のアプリに",
+        "it": "Idee in ebollizione, app per tutti i giorni",
+        "nl": "Bruisende ideeën, apps voor elke dag",
+        "pl": "Kipiące pomysły, aplikacje na co dzień"},
     "description": {
         "en": "brainboiled is an independent publisher of mobile apps: FlowDay, Diafra, Origins, MorseTree and RingWise.",
         "fr": "brainboiled est un éditeur indépendant d'applis mobiles : FlowDay, Diafra, Origins, MorseTree et RingWise.",

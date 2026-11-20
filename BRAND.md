@@ -17,37 +17,32 @@ Source du logo : création Canva « Identité visuelle Brainboiled ». Les fichi
 
 ## 2. La signature
 
-Deux niveaux, comme sous le logo Canva :
+Le sous-titre officiel est celui de la création Canva, sous le logo :
 
-| | Français | English |
-|---|---|---|
-| **Accroche** (grande) | L'esprit en ébullition | Minds on the boil |
-| **Sous-titre** (petit) | Des applis pour apprendre, s'organiser et progresser. | Apps to learn, get organised and improve. |
+> **Des idées en ébullition, des applis pour le quotidien**
 
-L'accroche reprend le nom (*boiled* = en ébullition). Le sous-titre dit ce que font les cinq applis : apprendre (Diafra, Origins, MorseTree), s'organiser (FlowDay), progresser (RingWise).
-Traductions des 9 langues dans `tools/i18n.py`. Dans l'accroche, le dernier mot est en dégradé.
-
-Remplace l'ancienne signature « Innovation technologique — Applications grand public » : à mettre à jour aussi dans la création Canva et dans la charte Diafra (page « L'éditeur »).
+Il s'écrit en une phrase, sans point final, en blanc et en gras sous le logo. Le français fait foi ; les traductions du site sont dans `tools/i18n.py` (anglais : « Ideas on the boil, apps for everyday life »).
 
 ## 3. Le logo
 
-Un cerveau vu de dessus dont les deux hémisphères dessinent les lettres **b** et **b** reliées par un circuit, en dégradé cyan → violet, et le nom « brainboiled » : « brain » en blanc (bleu nuit sur fond clair), « boiled » en dégradé.
+Le logo est celui de la création Canva « Identité visuelle Brainboiled ». **On ne le redessine pas** : les fichiers du site sont les exports Canva, dont seul le fond a été retiré.
 
-| Fichier (`assets/brand/`) | Usage |
-|---|---|
-| `brainboiled-logo-stacked-on-dark.svg` | Logo principal, symbole au-dessus du nom, sur fond sombre |
-| `brainboiled-logo-stacked-on-light.svg` | Même chose sur fond clair (documents, factures) |
-| `brainboiled-logo-horizontal-on-dark.svg` / `-on-light.svg` | Barre de site, pied de page, en-têtes |
-| `brainboiled-symbol.svg` | Symbole seul : favicon, mentions « une appli brainboiled » |
-| `…-mono-dark.svg` / `…-mono-white.svg` | Une couleur : gravure, tampon, fond photo chargé |
-| `brainboiled-app-icon-512.png` | Icône carrée (page développeur Google Play, réseaux) |
-| `og-brainboiled.jpg` | Image de partage 1200 × 630 |
+Un cerveau vu de dessus dont les deux hémisphères dessinent deux « b » reliés par un circuit, en dégradé cyan → violet, et le nom « brainboiled » : « brain » en blanc (bleu nuit sur fond clair), « boiled » en dégradé.
+
+| Fichier (`assets/brand/`) | Page Canva | Usage |
+|---|---|---|
+| `brainboiled-logo-empile.png` | 7 | Logo principal, symbole au-dessus du nom, sur fond sombre |
+| `brainboiled-logo-horizontal.png` | 4 | Barre de site, pied de page, en-têtes |
+| `brainboiled-symbole.png` | 2 | Symbole seul : mention « une appli brainboiled » |
+| `brainboiled-logo-clair.png` | 6 | Version bleu nuit pour fond clair (documents, factures) |
+| `brainboiled-icone-app-512.png` | 3 | Icône carrée (page développeur Google Play, réseaux) |
+| `og-brainboiled.jpg` | 7 | Image de partage 1200 × 630 |
 
 Règles :
 - Zone de protection : au moins la hauteur du « b » de « boiled » autour du logo.
-- Taille minimale : 24 px de haut pour le logo horizontal, 16 px pour le symbole.
-- Ne jamais recolorer le dégradé, l'inverser, ajouter ombre ou contour, déformer, ni séparer « brain » et « boiled ».
-- Sur une photo, utiliser la version mono blanche.
+- Taille minimale : 28 px de haut pour le logo horizontal, 16 px pour le symbole.
+- Ne jamais redessiner, recolorer, inverser le dégradé, ajouter ombre ou contour, ni déformer.
+- Pour une nouvelle déclinaison, repartir de la création Canva.
 
 ## 4. Les couleurs
 
@@ -68,14 +63,14 @@ La marque est **toujours sombre** : un bleu nuit profond, jamais du noir pur, é
 | Encre sur fond clair | `--bb-encre` | `#051840` |
 
 - Le dégradé va toujours de gauche (cyan) à droite (violet), en `linear-gradient(90deg, #00D4FF, #3D7BFF 50%, #9B2CFF)`.
-- Il sert au logo, au dernier mot de l'accroche, aux filets de titres de section. Jamais en aplat de grande surface, jamais derrière du texte courant.
+- Il sert au logo et aux filets de titres de section. Jamais en aplat de grande surface, jamais derrière du texte courant.
 - `--bb-violet` (#9B2CFF) n'atteint pas 4,5:1 sur le bleu nuit : pour du texte, `--bb-violet-clair` ou `--bb-cyan`.
 - Contrastes sur `--bb-nuit` : blanc 17:1, gris 8:1, cyan 10:1.
 
 ## 5. La typographie
 
-- **Urbanist** : la police de la marque et la voix commune de tous les sites (texte courant de l'accueil **et** des mini-sites d'applis). C'est la police la plus proche du nom dessiné dans le logo (« a » à un étage, géométrique, arrondie).
-  - ExtraBold 800 : accroches et grands titres. Bold 700 : titres de cartes. SemiBold 600 : boutons, étiquettes. Medium 500 : texte courant.
+- **Urbanist** : la police de texte de tous les sites (accueil **et** mini-sites d'applis), choisie parce qu'elle s'accorde avec le nom dessiné dans le logo (« a » à un étage, géométrique, arrondie). Elle ne sert jamais à réécrire le logo.
+  - ExtraBold 800 : grands titres. Bold 700 : sous-titre de la marque, titres de cartes. SemiBold 600 : boutons, étiquettes. Medium 500 : texte courant.
 - Japonais : polices système (Hiragino Sans, Noto Sans JP, Yu Gothic), jamais d'Urbanist forcé.
 - Les polices sont auto-hébergées dans `assets/fonts/` (aucun appel à Google Fonts : rien à déclarer au titre du RGPD).
 - Petites capitales espacées (0,14 em) pour les titres de section : « NOS APPLIS ».
@@ -108,7 +103,7 @@ Chaque appli a sa personnalité, mais toutes suivent les mêmes règles. C'est c
 5. **Un symbole** unique et lisible en 48 px.
 
 ### Ce qui est commun à toutes
-- **L'icône** : un seul symbole lumineux, centré, sur le fond sombre de l'appli (dégradé vertical léger), dans un carré plein (Android le découpe). Pas de texte dans l'icône.
+- **L'icône** : celle qui existe déjà pour chaque appli (`assets/apps/`). On ne la redessine pas ; toute l'identité de l'appli part d'elle.
 - **Le texte courant** des sites : Urbanist (voir §5). Dans l'appli elle-même, chacune garde ses polices.
 - **Le gabarit du mini-site** : même barre « une appli brainboiled » en haut, même pied de page brainboiled, mêmes composants (`assets/css/brainboiled.css`). Une appli ne change que ses jetons `[data-app="…"]`.
 - **Les visuels du store** (même gabarit que Diafra) :

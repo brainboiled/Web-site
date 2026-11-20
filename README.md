@@ -6,7 +6,7 @@ Site de l'éditeur **brainboiled** : un accueil qui présente les applis, et un 
 |---|---|
 | `/` , `/fr/` … `/pl/` | Accueil en 9 langues (généré) |
 | `flowday/` | Site FlowDay, repris de flowdayapp.com (9 langues, pages légales, vidéos) |
-| `diafra/`, `origines/`, `morsetree/`, `ringwise/` | Pages d'attente (générées) en attendant leurs vraies pages |
+| `diafra/`, `origins/`, `morsetree/`, `ringwise/` | Pages d'attente (générées) en attendant leurs vraies pages |
 | `assets/css/brainboiled.css` | La seule feuille de style ; un bloc `[data-app="…"]` par appli |
 | `assets/brand/` | Logos brainboiled (SVG tirés de la création Canva) |
 | `assets/apps/` | Icônes des applis |

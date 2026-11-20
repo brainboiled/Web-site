@@ -40,7 +40,7 @@ def head(lang, title, desc, canonical_path, alternates, app=None, icon=None, og_
     if app:
         icons = (f'<link rel="icon" type="image/png" sizes="32x32" href="/assets/apps/{app}-favicon-32.png">\n'
                  f'<link rel="apple-touch-icon" href="/assets/apps/{app}-apple-touch.png">')
-        theme = {"flowday": "#123F4E", "diafra": "#16110A", "origines": "#0B0E1C", "morsetree": "#11151E", "ringwise": "#161A20"}[app]
+        theme = {"flowday": "#123F4E", "diafra": "#16110A", "origins": "#0B0E1C", "morsetree": "#11151E", "ringwise": "#161A20"}[app]
     else:
         icons = ('<link rel="icon" type="image/svg+xml" href="/assets/brand/brainboiled-symbol.svg">\n'
                  '<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">\n'

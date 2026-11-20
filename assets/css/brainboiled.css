@@ -84,7 +84,7 @@
   --app-texte:#E8E0D0; --app-gris:#B8AC93; --app-accent:#F0C454; --app-accent-2:#FFC400; --app-sur-accent:#16110A;
   --app-titre:"Roboto",var(--font-brand); --app-titre-graisse:700;
 }
-[data-app="origines"]{
+[data-app="origins"]{
   --app-fond:#0B0E1C; --app-fond-2:#06070F; --app-surface:#151A33; --app-trait:rgba(217,178,95,.2);
   --app-texte:#EFE6D3; --app-gris:#B3AC9C; --app-accent:#D9B25F; --app-accent-2:#AEB8E6; --app-sur-accent:#0B0E1C;
   --app-titre:"IM Fell English",Georgia,serif; --app-titre-graisse:400; --app-titre-espace:0;

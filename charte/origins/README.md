@@ -1,20 +1,21 @@
-# Origines — charte graphique
+# Origins — charte graphique
 
-Origines est un jeu d'alchimie éducatif : on part de l'Énergie seule et on refait l'histoire du monde, du Big Bang à aujourd'hui, une recette sourcée à la fois. Il est édité par **brainboiled**.
+Origins est un jeu d'alchimie éducatif : on part de l'Énergie seule et on refait l'histoire du monde, du Big Bang à aujourd'hui, une recette sourcée à la fois. Il est édité par **brainboiled**.
 
 L'identité est celle d'une **planche de naturaliste ancienne vue de nuit** : médaillons dorés façon gravure, papier ancien, ciel étoilé. Elle part de l'icône existante (galaxie dorée dans un médaillon) et du style « planche naturaliste » choisi pour les icônes d'éléments.
 
 ## Le nom
 
-- On écrit **Origines** avec un s, dans toutes les langues (c'est le nom affiché sous l'icône). Pas de traduction (« Origins », « Orígenes »…) pour le nom, seulement pour le sous-titre.
-- Titre sur le store : « Origines : l'histoire en recettes » et ses traductions (à valider).
+- On écrit **Origins**, dans toutes les langues : jamais traduit (ni « Origines », ni « Orígenes »…). Seul le sous-titre se traduit.
+- À mettre à jour : le nom affiché sous l'icône (`android:label="Origines"`) et le README du dépôt Origin.
+- Titre sur le store : « Origins : l'histoire en recettes » (FR), « Origins: history in recipes » (EN) et ses traductions (à valider).
 - Éditeur : « un jeu brainboiled ».
 
 ## Le logo et l'icône
 
 - **Symbole** : une galaxie spirale dorée, une étoile à huit branches au centre, dans un médaillon de bronze gravé et perlé.
-- **Icône** : `assets/brand/icon-1024.png` du dépôt Origin (copie web : `assets/apps/origines-icon-192.png`).
-- **Logo avec le nom** : l'icône suivie de « Origines » en IM Fell English, couleur `or-grave`.
+- **Icône** : `assets/brand/icon-1024.png` du dépôt Origin (copie web : `assets/apps/origins-icon-192.png`).
+- **Logo avec le nom** : l'icône suivie de « Origins » en IM Fell English, couleur `or-grave`.
 - Ne jamais aplatir le médaillon ni le remplacer par un cercle uni ; ne pas ajouter de dégradé moderne.
 
 ## Les couleurs
@@ -54,9 +55,9 @@ Contraste : or-gravé sur nuit-cosmique 9,6:1, parchemin 15,5:1.
 ## Les visuels du store
 
 - **Icône** 512 × 512.
-- **Image de présentation** 1024 × 500 : dégradé horizontal `nuit-bleue` → `nuit-profonde` avec poussière d'étoiles, médaillon à gauche, « Origines » en `or-grave`, sous-titre en `parchemin`.
+- **Image de présentation** 1024 × 500 : dégradé horizontal `nuit-bleue` → `nuit-profonde` avec poussière d'étoiles, médaillon à gauche, « Origins » en `or-grave`, sous-titre en `parchemin`.
 - **Captures** 1080 × 1920 (6 par langue) : titre en `or-grave` (IM Fell English), sous-titre en `parchemin`, écran réel dans un téléphone coupé par le bas.
 
 ## L'éditeur
 
-Origines est édité par brainboiled. Mention « un jeu brainboiled » sur le site et en fin de description du store ; jamais de logo brainboiled dans l'icône ni sur les captures.
+Origins est édité par brainboiled. Mention « un jeu brainboiled » sur le site et en fin de description du store ; jamais de logo brainboiled dans l'icône ni sur les captures.

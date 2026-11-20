@@ -1,12 +1,13 @@
-# Morse Tree — charte graphique
+# MorseTree — charte graphique
 
-Morse Tree est un traducteur morse dont l'écran principal est une carte électronique animée : chaque point et chaque trait allume une diode et fait avancer dans l'arbre du morse. Quatre modes : Manipuler, Écrire, Écouter, Apprendre. Elle est éditée par **brainboiled**.
+MorseTree est un traducteur morse dont l'écran principal est une carte électronique animée : chaque point et chaque trait allume une diode et fait avancer dans l'arbre du morse. Quatre modes : Manipuler, Écrire, Écouter, Apprendre. Elle est éditée par **brainboiled**.
 
 L'identité est celle d'un **circuit imprimé de radioamateur, la nuit** : graphite, pistes dorées, diodes rouges et vertes. Elle part de l'icône et de l'image de présentation existantes.
 
 ## Le nom
 
-- On écrit **Morse Tree** en deux mots, avec deux majuscules (c'est le nom affiché sous l'icône). Dans les visuels, il s'écrit en capitales espacées : « MORSE TREE ». L'adresse web est `/morsetree/`.
+- On écrit **MorseTree** : un seul mot, M et T majuscules. Jamais « Morse Tree », « Morsetree » ni « MORSE TREE ». Dans les visuels en capitales : « MORSETREE ». L'adresse web est `/morsetree/`.
+- À mettre à jour : le nom affiché sous l'icône (`android:label="Morse Tree"`) et l'image de présentation, qui écrit encore « MORSE / TREE » sur deux lignes.
 - Invariable dans toutes les langues.
 - Éditeur : « une appli brainboiled ».
 
@@ -14,7 +15,7 @@ L'identité est celle d'un **circuit imprimé de radioamateur, la nuit** : graph
 
 - **Symbole** : une antenne en Y, reliée à gauche à un trait rouge (le tiret) et à droite à un point vert (le point), dans un cadre d'acier arrondi, sur graphite.
 - **Icône** : `play-store/icone-512.png` du dépôt MorseTree (copie web : `assets/apps/morsetree-icon-192.png`).
-- **Logo avec le nom** : antenne dorée + « MORSE / TREE » en Rajdhani Bold capitales espacées blanches, avec la ligne de tirets rouges et points verts (voir l'image de présentation).
+- **Logo avec le nom** : antenne dorée + « MORSETREE » en Rajdhani Bold capitales espacées blanches, avec la ligne de tirets rouges et points verts.
 - Le rouge est toujours le **trait**, le vert toujours le **point** : ne jamais les inverser.
 
 ## Les couleurs
@@ -53,11 +54,11 @@ Contraste : diode-verte sur graphite 10,2:1, blanc 15,9:1.
 ## Les visuels du store
 
 - **Icône** 512 × 512.
-- **Image de présentation** 1024 × 500 : graphite avec grille, antenne dorée et ligne morse à gauche, « MORSE TREE » en capitales, la carte animée inclinée à droite. Modèle actuel, à garder.
+- **Image de présentation** 1024 × 500 : graphite avec grille, antenne dorée et ligne morse à gauche, « MORSETREE » en capitales sur une ligne, la carte animée inclinée à droite. Modèle actuel, à garder en corrigeant le nom.
 - **Captures** 1080 × 1920 : titre en `diode-verte`, sous-titre en `blanc-ecran`, écran réel dans un téléphone coupé par le bas.
 
 ## L'éditeur
 
-Morse Tree est éditée par brainboiled. Mention « une appli brainboiled » sur le site et en fin de description du store ; jamais de logo brainboiled dans l'icône ni sur les captures.
+MorseTree est éditée par brainboiled. Mention « une appli brainboiled » sur le site et en fin de description du store ; jamais de logo brainboiled dans l'icône ni sur les captures.
 
 À faire : la politique de confidentialité est aujourd'hui prévue sur `easydore78.github.io/MorseTree-legal/`. Elle doit passer sur `brainboiled.com/morsetree/privacy/` avant la publication.

@@ -1,6 +1,6 @@
 # brainboiled — charte graphique
 
-Charte de l'éditeur **brainboiled** et règles communes à ses applis (FlowDay, Diafra, Origines, Morse Tree, RingWise).
+Charte de l'éditeur **brainboiled** et règles communes à ses applis (FlowDay, Diafra, Origins, MorseTree, RingWise).
 Les chartes détaillées de chaque appli sont dans `charte/<appli>/` et suivent toutes le même plan, celui de la charte Diafra.
 
 Source du logo : création Canva « Identité visuelle Brainboiled ». Les fichiers web en sont tirés (`assets/brand/`).
@@ -12,7 +12,8 @@ Source du logo : création Canva « Identité visuelle Brainboiled ». Les fichi
 - **brainboiled** : un seul mot, tout en minuscules dans le logo et sur le site. En début de phrase dans un texte courant, on peut écrire « Brainboiled ».
 - « brain » + « boiled » : un cerveau en ébullition, qui bouillonne d'idées. Jamais « Brain Boiled » en deux mots, jamais « BB ».
 - Domaines : **brainboiled.com** (site) et **brainboiled.app** (redirige vers le .com).
-- Identifiants d'applis : `com.brainboiled.<appli>` pour toutes les nouvelles applis (FlowDay garde `fr.flowday`, Morse Tree `fr.MorseTree` : un identifiant publié ne change plus).
+- Noms des applis, à écrire exactement ainsi, dans toutes les langues : **FlowDay**, **Diafra**, **Origins**, **MorseTree**, **RingWise**.
+- Identifiants d'applis : `com.brainboiled.<appli>` pour toutes les nouvelles applis (FlowDay garde `fr.flowday`, MorseTree `fr.MorseTree` : un identifiant publié ne change plus).
 
 ## 2. La signature
 
@@ -23,7 +24,7 @@ Deux niveaux, comme sous le logo Canva :
 | **Accroche** (grande) | L'esprit en ébullition | Minds on the boil |
 | **Sous-titre** (petit) | Des applis pour apprendre, s'organiser et progresser. | Apps to learn, get organised and improve. |
 
-L'accroche reprend le nom (*boiled* = en ébullition). Le sous-titre dit ce que font les cinq applis : apprendre (Diafra, Origines, Morse Tree), s'organiser (FlowDay), progresser (RingWise).
+L'accroche reprend le nom (*boiled* = en ébullition). Le sous-titre dit ce que font les cinq applis : apprendre (Diafra, Origins, MorseTree), s'organiser (FlowDay), progresser (RingWise).
 Traductions des 9 langues dans `tools/i18n.py`. Dans l'accroche, le dernier mot est en dégradé.
 
 Remplace l'ancienne signature « Innovation technologique — Applications grand public » : à mettre à jour aussi dans la création Canva et dans la charte Diafra (page « L'éditeur »).
@@ -125,11 +126,11 @@ Chaque appli a sa personnalité, mais toutes suivent les mêmes règles. C'est c
 |---|---|---|---|---|---|
 | **FlowDay** | Bleu canard `#123F4E` | Soleil `#FFC438` | Turquoise clair `#7FD3E3` | Nunito ExtraBold | Le « f » qui part en flèche, point de départ jaune |
 | **Diafra** | Brun profond `#16110A` | Or `#F0C454` | Jaune collimateur `#FFC400` | Roboto Bold | Diaphragme or à six lames |
-| **Origines** | Nuit cosmique `#0B0E1C` | Or gravé `#D9B25F` | Lavande stellaire `#AEB8E6` | IM Fell English | Galaxie dorée dans un médaillon gravé |
-| **Morse Tree** | Graphite `#11151E` | Vert diode `#3DDC84` | Or antenne `#E6C56F` | Rajdhani Bold capitales | Antenne, trait rouge et point vert |
+| **Origins** | Nuit cosmique `#0B0E1C` | Or gravé `#D9B25F` | Lavande stellaire `#AEB8E6` | IM Fell English | Galaxie dorée dans un médaillon gravé |
+| **MorseTree** | Graphite `#11151E` | Vert diode `#3DDC84` | Or antenne `#E6C56F` | Rajdhani Bold capitales | Antenne, trait rouge et point vert |
 | **RingWise** | Charbon `#161A20` | Orange mouche `#FF6A2B` | Crème carton `#F3F0E4` | Barlow Condensed Bold capitales | Cible noire et crème, mouche orange |
 
-Les deux ors (Diafra et Origines) restent distincts : l'or de Diafra est vif et chaud sur un brun, celui d'Origines est patiné, sur un bleu nuit, avec une police à l'ancienne.
+Les deux ors (Diafra et Origins) restent distincts : l'or de Diafra est vif et chaud sur un brun, celui d'Origins est patiné, sur un bleu nuit, avec une police à l'ancienne.
 
 ### Ajouter une nouvelle appli
 1. Choisir fond, signature, secondaire, police de titre en vérifiant que la signature ne ressemble à aucune autre du tableau (écart de teinte d'au moins 40°, ou bien fond et police très différents).

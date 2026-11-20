@@ -3,7 +3,7 @@
 
     python3 tools/build.py [chemin/vers/flowday-legal]
 
-- Accueil brainboiled en 9 langues (/, /fr/, /de/ …)
+- Accueil BrainBoiled en 9 langues (/, /fr/, /de/ …)
 - Page d'attente pour chaque appli pas encore publiée (/<appli>/, /<appli>/fr/ …)
 - Migration du site FlowDay (dépôt flowday-legal) vers /flowday/, si son chemin est donné
 - Politiques de confidentialité des applis : tools/legal/<appli>/privacy.<langue>.html
@@ -90,10 +90,10 @@ def topbar(lang, paths, app=None):
     home = f"/{lp(lang)}"
     if app:
         mark = (f'<a class="brandmark" href="{home}"><img src="/assets/brand/brainboiled-symbole.png" alt="" width="32" height="28">'
-                f'<span><span class="by">{HOME["an_app_by"][lang]} </span><strong>brainboiled</strong></span></a>')
+                f'<span><span class="by">{HOME["an_app_by"][lang]} </span><strong>BrainBoiled</strong></span></a>')
     else:
         mark = (f'<a class="brandmark" href="{home}"><img src="/assets/brand/brainboiled-logo-horizontal.png" '
-                f'alt="brainboiled" width="126" height="32"></a>')
+                f'alt="BrainBoiled" width="126" height="32"></a>')
     return f'<div class="topbar"><div class="wrap">{mark}{lang_switch(lang, paths)}</div></div>'
 
 
@@ -101,8 +101,8 @@ def site_foot(lang, app=None):
     home = f"/{lp(lang)}"
     links = [f'<a href="mailto:{CONTACT}">{HOME["contact"][lang]}</a>']
     return (f'<footer class="site-foot"><div class="wrap">'
-            f'<a href="{home}"><img src="/assets/brand/brainboiled-logo-horizontal.png" alt="brainboiled" width="110" height="28"></a>'
-            f'<nav>{"".join(links)}</nav><span>© 2026 brainboiled</span></div></footer>')
+            f'<a href="{home}"><img src="/assets/brand/brainboiled-logo-horizontal.png" alt="BrainBoiled" width="110" height="28"></a>'
+            f'<nav>{"".join(links)}</nav><span>© 2026 BrainBoiled</span></div></footer>')
 
 
 # ---------------------------------------------------------------- accueil
@@ -129,7 +129,7 @@ def build_home():
 {topbar(lang, paths)}
 <main>
   <header class="hero wrap">
-    <img class="logo" src="/assets/brand/brainboiled-logo-empile.png" alt="brainboiled" width="360" height="221">
+    <img class="logo" src="/assets/brand/brainboiled-logo-empile.png" alt="BrainBoiled" width="360" height="221">
     <h1>{HOME['tagline'][lang]}</h1>
   </header>
   <section class="section wrap" id="apps">

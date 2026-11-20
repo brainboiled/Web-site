@@ -1,6 +1,6 @@
-# brainboiled — charte graphique
+# BrainBoiled — charte graphique
 
-Charte de l'éditeur **brainboiled** et règles communes à ses applis (FlowDay, Diafra, Origins, MorseTree, RingWise).
+Charte de l'éditeur **BrainBoiled** et règles communes à ses applis (FlowDay, Diafra, Origins, MorseTree, RingWise).
 Les chartes détaillées de chaque appli sont dans `charte/<appli>/` et suivent toutes le même plan, celui de la charte Diafra.
 
 Source du logo : création Canva « Identité visuelle Brainboiled ». Les fichiers web en sont tirés (`assets/brand/`).
@@ -9,8 +9,10 @@ Source du logo : création Canva « Identité visuelle Brainboiled ». Les fichi
 
 ## 1. Le nom
 
-- **brainboiled** : un seul mot, tout en minuscules dans le logo et sur le site. En début de phrase dans un texte courant, on peut écrire « Brainboiled ».
-- « brain » + « boiled » : un cerveau en ébullition, qui bouillonne d'idées. Jamais « Brain Boiled » en deux mots, jamais « BB ».
+- **BrainBoiled** dans tous les textes : un seul mot, B et B majuscules, comme les applis (FlowDay, MorseTree, RingWise). Jamais « Brainboiled », « brainboiled » ni « Brain Boiled » en deux mots, jamais « BB ».
+- Le logo dessiné (création Canva) reste en minuscules, « brainboiled » : c'est un dessin, il ne se réécrit pas.
+- « brain » + « boiled » : un cerveau en ébullition, qui bouillonne d'idées.
+- Les adresses web et mail restent en minuscules (brainboiled.com).
 - Domaines : **brainboiled.com** (site) et **brainboiled.app** (redirige vers le .com).
 - Noms des applis, à écrire exactement ainsi, dans toutes les langues : **FlowDay**, **Diafra**, **Origins**, **MorseTree**, **RingWise**.
 - Adresses mail (toutes redirigées vers la même boîte par Cloudflare Email Routing) : contact@brainboiled.com pour le studio, et une adresse par appli : flowday@, diafra@, origins@, morsetree@, ringwise@brainboiled.com. Chaque appli affiche la sienne sur son site et dans sa fiche Play Store.
@@ -28,13 +30,13 @@ Il s'écrit en une phrase, sans point final, en blanc et en gras sous le logo. L
 
 Le logo est celui de la création Canva « Identité visuelle Brainboiled ». **On ne le redessine pas** : les fichiers du site sont les exports Canva, dont seul le fond a été retiré.
 
-Un cerveau vu de dessus dont les deux hémisphères dessinent deux « b » reliés par un circuit, en dégradé cyan → violet, et le nom « brainboiled » : « brain » en blanc (bleu nuit sur fond clair), « boiled » en dégradé.
+Un cerveau vu de dessus dont les deux hémisphères dessinent deux « b » reliés par un circuit, en dégradé cyan → violet, et le nom « BrainBoiled » : « brain » en blanc (bleu nuit sur fond clair), « boiled » en dégradé.
 
 | Fichier (`assets/brand/`) | Page Canva | Usage |
 |---|---|---|
 | `brainboiled-logo-empile.png` | 7 | Logo principal, symbole au-dessus du nom, sur fond sombre |
 | `brainboiled-logo-horizontal.png` | 4 | Barre de site, pied de page, en-têtes |
-| `brainboiled-symbole.png` | 2 | Symbole seul : mention « une appli brainboiled » |
+| `brainboiled-symbole.png` | 2 | Symbole seul : mention « une appli BrainBoiled » |
 | `brainboiled-logo-clair.png` | 6 | Version bleu nuit pour fond clair (documents, factures) |
 | `brainboiled-icone-app-512.png` | 3 | Icône carrée (page développeur Google Play, réseaux) |
 | `og-brainboiled.jpg` | 7 | Image de partage 1200 × 630 |
@@ -85,7 +87,7 @@ La marque est **toujours sombre** : un bleu nuit profond, jamais du noir pur, é
 
 ## 7. Le ton
 
-- brainboiled (le studio) **vouvoie** et parle simplement : « Vos données restent à vous ».
+- BrainBoiled (le studio) **vouvoie** et parle simplement : « Vos données restent à vous ».
 - Chaque appli garde sa propre voix dans ses pages (Diafra tutoie, comme un ami photographe).
 - Phrases courtes, sans superlatifs publicitaires ni emoji dans les textes de marque.
 - On ne promet que ce que l'appli fait vraiment (pas de « n°1 », pas de « révolutionnaire »).
@@ -106,12 +108,12 @@ Chaque appli a sa personnalité, mais toutes suivent les mêmes règles. C'est c
 ### Ce qui est commun à toutes
 - **L'icône** : celle qui existe déjà pour chaque appli (`assets/apps/`). On ne la redessine pas ; toute l'identité de l'appli part d'elle.
 - **Le texte courant** des sites : Urbanist (voir §5). Dans l'appli elle-même, chacune garde ses polices.
-- **Le gabarit du mini-site** : même barre « une appli brainboiled » en haut, même pied de page brainboiled, mêmes composants (`assets/css/brainboiled.css`). Une appli ne change que ses jetons `[data-app="…"]`.
+- **Le gabarit du mini-site** : même barre « une appli BrainBoiled » en haut, même pied de page BrainBoiled, mêmes composants (`assets/css/brainboiled.css`). Une appli ne change que ses jetons `[data-app="…"]`.
 - **Les visuels du store** (même gabarit que Diafra) :
   - Image de présentation **1024 × 500** : icône à gauche, nom en couleur signature, sous-titre de la langue en couleur de texte, dégradé horizontal du fond de l'appli.
   - **6 captures 1080 × 1920 par langue** : titre court en couleur signature (une promesse), sous-titre clair, écran réel de l'appli dans un téléphone coupé par le bas. Jamais de maquette retouchée.
   - Icône **512 × 512** PNG.
-- **La mention éditeur** : « une appli brainboiled » avec le symbole, dans le pied des pages, sur la page développeur et en fin de description longue du store (« Diafra est éditée par brainboiled. »). Le logo brainboiled n'apparaît **jamais** dans l'icône ni sur les captures : l'appli garde son identité.
+- **La mention éditeur** : « une appli BrainBoiled » avec le symbole, dans le pied des pages, sur la page développeur et en fin de description longue du store (« Diafra est éditée par brainboiled. »). Le logo BrainBoiled n'apparaît **jamais** dans l'icône ni sur les captures : l'appli garde son identité.
 - **Les pages obligatoires du Play Store**, toutes à la même adresse type :
   - `brainboiled.com/<appli>/` (présentation), `/<appli>/privacy/` (confidentialité), `/<appli>/terms/` (conditions), `/<appli>/delete-account/` (suppression des données), dans chaque langue de l'appli (`/<appli>/fr/privacy/`…).
 - **La charte** : un dossier `charte/<appli>/` avec `README.md` (même plan : nom, logo, couleurs, typo, formes, ton, visuels du store, éditeur) et `tokens.json`.

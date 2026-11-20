@@ -1,6 +1,6 @@
 # FlowDay — charte graphique
 
-FlowDay est un planning visuel pour les personnes qui ont des difficultés d'attention (TDAH) : une tâche à la fois, avec un compte à rebours en direct. Elle est éditée par **brainboiled**.
+FlowDay est un planning visuel pour les personnes qui ont des difficultés d'attention (TDAH) : une tâche à la fois, avec un compte à rebours en direct. Elle est éditée par **BrainBoiled**.
 
 L'identité part de ce qui existe déjà : l'icône (le « f » qui file vers l'avant) et l'image de présentation du Play Store (bleu canard et jaune). Elle est calme, chaleureuse et lisible : rien ne doit distraire.
 
@@ -10,7 +10,7 @@ L'identité part de ce qui existe déjà : l'icône (le « f » qui file vers l'
 - Invariable dans toutes les langues.
 - Titre sur le store : « FlowDay – Planificateur TDAH » et ses traductions.
 - Baseline : « Pas tout. Juste maintenant. » / « Not everything. Just now. »
-- Éditeur : « une appli brainboiled ».
+- Éditeur : « une appli BrainBoiled ».
 
 ## Le logo et l'icône
 
@@ -39,7 +39,7 @@ Contraste : soleil sur canard-profond 7,2:1, blanc 10,8:1.
 ## La typographie
 
 - **Nunito** ExtraBold (800) pour le nom et les titres des visuels, Bold (700) pour les titres de cartes.
-- Sur le site, le texte courant est en Urbanist (voix commune brainboiled).
+- Sur le site, le texte courant est en Urbanist (voix commune BrainBoiled).
 - Japonais : Noto Sans JP.
 
 ## Formes et espacements
@@ -62,4 +62,4 @@ Contraste : soleil sur canard-profond 7,2:1, blanc 10,8:1.
 
 ## L'éditeur
 
-FlowDay est éditée par brainboiled. La mention « une appli brainboiled » figure en haut et en bas du site et en fin de description du store. Le logo brainboiled n'apparaît ni dans l'icône ni sur les captures.
+FlowDay est éditée par brainboiled. La mention « une appli BrainBoiled » figure en haut et en bas du site et en fin de description du store. Le logo BrainBoiled n'apparaît ni dans l'icône ni sur les captures.

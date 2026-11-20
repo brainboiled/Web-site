@@ -1,6 +1,6 @@
 # brainboiled.com
 
-Site de l'éditeur **brainboiled** : un accueil qui présente les applis, et un mini-site par appli avec les pages exigées par Google Play (présentation, confidentialité, conditions, suppression des données).
+Site de l'éditeur **BrainBoiled** : un accueil qui présente les applis, et un mini-site par appli avec les pages exigées par Google Play (présentation, confidentialité, conditions, suppression des données).
 
 | Dossier | Contenu |
 |---|---|
@@ -8,10 +8,10 @@ Site de l'éditeur **brainboiled** : un accueil qui présente les applis, et un 
 | `flowday/` | Site FlowDay, repris de flowdayapp.com (9 langues, pages légales, vidéos) |
 | `diafra/`, `origins/`, `morsetree/`, `ringwise/` | Pages d'attente (générées) en attendant leurs vraies pages |
 | `assets/css/brainboiled.css` | La seule feuille de style ; un bloc `[data-app="…"]` par appli |
-| `assets/brand/` | Logos brainboiled (exports de la création Canva, fond retiré) |
+| `assets/brand/` | Logos BrainBoiled (exports de la création Canva, fond retiré) |
 | `assets/apps/` | Icônes des applis |
 | `assets/fonts/` | Polices auto-hébergées |
-| `BRAND.md` | Charte brainboiled et règles communes aux applis |
+| `BRAND.md` | Charte BrainBoiled et règles communes aux applis |
 | `charte/<appli>/` | Charte de chaque appli (`README.md` + `tokens.json`) |
 | `tools/` | `i18n.py` (textes) et `build.py` (génération) |
 | `tools/legal/<appli>/privacy.<langue>.html` | Texte des politiques de confidentialité ; génère `/<appli>/privacy/` (anglais) et `/<appli>/<langue>/privacy/`, avec un lien depuis la page de l'appli |

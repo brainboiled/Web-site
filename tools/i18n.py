@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Textes de l'accueil brainboiled et des fiches d'applis, en 9 langues.
+"""Textes de l'accueil BrainBoiled et des fiches d'applis, en 9 langues.
 Ajouter une appli : une entrée dans APPS (ordre d'affichage), puis relancer tools/build.py.
 """
 
@@ -97,8 +97,8 @@ HOME = {
         "it": "L'app è in fase di rifinitura. La sua pagina, l'informativa sulla privacy e i termini d'uso saranno pubblicati qui prima dell'uscita su Google Play.",
         "nl": "De app wordt afgerond. De pagina, het privacybeleid en de gebruiksvoorwaarden verschijnen hier vóór de lancering op Google Play.",
         "pl": "Aplikacja jest na ostatnim etapie prac. Jej strona, polityka prywatności i regulamin pojawią się tutaj przed premierą w Google Play."},
-    "back_home": {"en": "← All brainboiled apps", "fr": "← Toutes les applis brainboiled", "de": "← Alle brainboiled-Apps",
-                  "pt": "← Todas as apps brainboiled", "es": "← Todas las apps de brainboiled", "ja": "← brainboiled のアプリ一覧",
+    "back_home": {"en": "← All BrainBoiled apps", "fr": "← Toutes les applis brainboiled", "de": "← Alle brainboiled-Apps",
+                  "pt": "← Todas as apps brainboiled", "es": "← Todas las apps de brainboiled", "ja": "← BrainBoiled のアプリ一覧",
                   "it": "← Tutte le app brainboiled", "nl": "← Alle apps van brainboiled", "pl": "← Wszystkie aplikacje brainboiled"},
 }
 

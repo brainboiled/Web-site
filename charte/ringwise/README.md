@@ -1,6 +1,6 @@
 # RingWise — charte graphique
 
-RingWise compte les points des cartons de tir sportif à partir d'une photo et explique au tireur ce qui ne va pas : causes probables, correction du dioptre en clics, suivi par arme et par munition. Elle est éditée par **brainboiled**.
+RingWise compte les points des cartons de tir sportif à partir d'une photo et explique au tireur ce qui ne va pas : causes probables, correction du dioptre en clics, suivi par arme et par munition. Elle est éditée par **BrainBoiled**.
 
 L'identité est celle du **pas de tir** : le noir et le crème du carton, l'orange de la mouche, la rigueur du règlement. Elle part de l'icône existante (cible avec trois tireurs et mouche orange) et du thème de l'appli (graine `#D9480F`).
 
@@ -8,7 +8,7 @@ L'identité est celle du **pas de tir** : le noir et le crème du carton, l'oran
 
 - On écrit **RingWise** : R et W majuscules, en un mot. Toujours avec cette casse, y compris dans les visuels : pas de version tout en capitales.
 - Titre sur le store : « RingWise – Score & Coach ».
-- Éditeur : « une appli brainboiled ».
+- Éditeur : « une appli BrainBoiled ».
 - Attention (voir `docs/play-store.md` du dépôt) : le nom commence par « Ring », marque très protégée en classe 9. Faire la recherche TMview/USPTO avant d'investir dans le logo définitif.
 
 ## Le logo et l'icône
@@ -37,7 +37,7 @@ Contraste : mouche sur charbon 6,1:1, crème 15,3:1.
 
 - **Barlow Condensed** Bold (700) pour le nom, les titres et les **scores** (chiffres étroits, lisibles comme un tableau d'affichage).
 - **IBM Plex Sans** pour le texte de l'appli (déjà utilisé dans le prototype).
-- Sur le site, le texte courant est en Urbanist (voix commune brainboiled).
+- Sur le site, le texte courant est en Urbanist (voix commune BrainBoiled).
 
 ## Formes et espacements
 
@@ -59,4 +59,4 @@ Contraste : mouche sur charbon 6,1:1, crème 15,3:1.
 
 ## L'éditeur
 
-RingWise est éditée par brainboiled (identifiant `com.brainboiled.ringwise`). Mention « une appli brainboiled » sur le site et en fin de description du store ; jamais de logo brainboiled dans l'icône ni sur les captures.
+RingWise est éditée par BrainBoiled (identifiant `com.brainboiled.ringwise`). Mention « une appli BrainBoiled » sur le site et en fin de description du store ; jamais de logo BrainBoiled dans l'icône ni sur les captures.

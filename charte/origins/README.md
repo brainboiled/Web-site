@@ -1,6 +1,6 @@
 # Origins — charte graphique
 
-Origins est un jeu d'alchimie éducatif : on part de l'Énergie seule et on refait l'histoire du monde, du Big Bang à aujourd'hui, une recette sourcée à la fois. Il est édité par **brainboiled**.
+Origins est un jeu d'alchimie éducatif : on part de l'Énergie seule et on refait l'histoire du monde, du Big Bang à aujourd'hui, une recette sourcée à la fois. Il est édité par **BrainBoiled**.
 
 L'identité est celle d'une **planche de naturaliste ancienne vue de nuit** : médaillons dorés façon gravure, papier ancien, ciel étoilé. Elle part de l'icône existante (galaxie dorée dans un médaillon) et du style « planche naturaliste » choisi pour les icônes d'éléments.
 
@@ -9,7 +9,7 @@ L'identité est celle d'une **planche de naturaliste ancienne vue de nuit** : m�
 - On écrit **Origins**, dans toutes les langues : jamais traduit (ni « Origines », ni « Orígenes »…). Seul le sous-titre se traduit.
 - À mettre à jour : le nom affiché sous l'icône (`android:label="Origines"`) et le README du dépôt Origin.
 - Titre sur le store : « Origins : l'histoire en recettes » (FR), « Origins: history in recipes » (EN) et ses traductions (à valider).
-- Éditeur : « un jeu brainboiled ».
+- Éditeur : « un jeu BrainBoiled ».
 
 ## Le logo et l'icône
 
@@ -37,7 +37,7 @@ Contraste : or-gravé sur nuit-cosmique 9,6:1, parchemin 15,5:1.
 
 - **IM Fell English** pour le nom et les titres (style gravure du XVIIe siècle) ; **IM Fell English SC** pour les petites capitales (noms d'ères).
 - **EB Garamond** pour les textes d'explication des recettes, dans l'appli.
-- Sur le site, le texte courant est en Urbanist (voix commune brainboiled) ; seuls les titres sont en IM Fell English.
+- Sur le site, le texte courant est en Urbanist (voix commune BrainBoiled) ; seuls les titres sont en IM Fell English.
 - Japonais : Noto Serif JP.
 
 ## Formes et espacements
@@ -60,4 +60,4 @@ Contraste : or-gravé sur nuit-cosmique 9,6:1, parchemin 15,5:1.
 
 ## L'éditeur
 
-Origins est édité par brainboiled. Mention « un jeu brainboiled » sur le site et en fin de description du store ; jamais de logo brainboiled dans l'icône ni sur les captures.
+Origins est édité par brainboiled. Mention « un jeu BrainBoiled » sur le site et en fin de description du store ; jamais de logo BrainBoiled dans l'icône ni sur les captures.

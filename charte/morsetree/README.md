@@ -61,4 +61,4 @@ Contraste : diode-verte sur graphite 10,2:1, blanc 15,9:1.
 
 MorseTree est éditée par brainboiled. Mention « une appli brainboiled » sur le site et en fin de description du store ; jamais de logo brainboiled dans l'icône ni sur les captures.
 
-À faire : la politique de confidentialité est aujourd'hui prévue sur `easydore78.github.io/MorseTree-legal/`. Elle doit passer sur `brainboiled.com/morsetree/privacy/` avant la publication.
+Politique de confidentialité : `brainboiled.com/morsetree/privacy/` (anglais) et `brainboiled.com/morsetree/fr/privacy/` (français). Le texte se modifie dans `tools/legal/morsetree/`, puis `python3 tools/build.py`.

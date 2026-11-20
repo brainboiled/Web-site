@@ -14,6 +14,7 @@ Site de l'éditeur **brainboiled** : un accueil qui présente les applis, et un 
 | `BRAND.md` | Charte brainboiled et règles communes aux applis |
 | `charte/<appli>/` | Charte de chaque appli (`README.md` + `tokens.json`) |
 | `tools/` | `i18n.py` (textes) et `build.py` (génération) |
+| `tools/legal/<appli>/privacy.<langue>.html` | Texte des politiques de confidentialité ; génère `/<appli>/privacy/` (anglais) et `/<appli>/<langue>/privacy/`, avec un lien depuis la page de l'appli |
 
 ## Régénérer
 

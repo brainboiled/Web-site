@@ -6,6 +6,8 @@
 - Accueil brainboiled en 9 langues (/, /fr/, /de/ …)
 - Page d'attente pour chaque appli pas encore publiée (/<appli>/, /<appli>/fr/ …)
 - Migration du site FlowDay (dépôt flowday-legal) vers /flowday/, si son chemin est donné
+- Politiques de confidentialité des applis : tools/legal/<appli>/privacy.<langue>.html
+  -> /<appli>/privacy/ (anglais) et /<appli>/<langue>/privacy/
 - sitemap.xml
 
 Tout est statique (GitHub Pages). La mise en forme vient de /assets/css/brainboiled.css.
@@ -148,6 +150,11 @@ def build_home():
 
 
 # ---------------------------------------------------------------- pages d'attente
+def privacy_link(slug, lang):
+    p = privacy_path(slug, lang)
+    return f'<p style="text-align:center"><a href="{p}">{PRIVACY_LABEL[lang]}</a></p>\n  ' if p else ""
+
+
 def build_placeholders():
     for a in APPS:
         if a["slug"] in OWN_PAGES:
@@ -172,13 +179,62 @@ def build_placeholders():
       <p style="margin-top:14px">{HOME['soon_long'][lang]}</p>
     </div>
   </section>
-  <p style="text-align:center"><a class="back" href="/{lp(lang)}">{HOME['back_home'][lang]}</a></p>
+  {privacy_link(s, lang)}<p style="text-align:center"><a class="back" href="/{lp(lang)}">{HOME['back_home'][lang]}</a></p>
 </main>
 {site_foot(lang, app=s)}
 </body>
 </html>
 """
             write(f"{s}/{lp(lang)}index.html", page)
+
+
+# ---------------------------------------------------------------- politiques de confidentialité
+LEGAL_DIR = os.path.join(ROOT, "tools", "legal")
+PRIVACY_LABEL = {
+    "en": "Privacy policy", "fr": "Politique de confidentialité", "de": "Datenschutzerklärung",
+    "pt": "Política de privacidade", "es": "Política de privacidad", "ja": "プライバシーポリシー",
+    "it": "Informativa sulla privacy", "nl": "Privacybeleid", "pl": "Polityka prywatności",
+}
+
+
+def privacy_langs(slug):
+    """langues dans lesquelles la politique de l'appli existe (fichiers tools/legal/<slug>/privacy.<l>.html)"""
+    d = os.path.join(LEGAL_DIR, slug)
+    if not os.path.isdir(d):
+        return []
+    return [l for l in LANGS if os.path.exists(os.path.join(d, f"privacy.{l}.html"))]
+
+
+def privacy_path(slug, lang):
+    """chemin de la politique dans la langue demandée, sinon en anglais"""
+    langs = privacy_langs(slug)
+    if not langs:
+        return None
+    l = lang if lang in langs else ("en" if "en" in langs else langs[0])
+    return f"/{slug}/{lp(l)}privacy/"
+
+
+def build_privacy():
+    for a in APPS:
+        s = a["slug"]
+        if s in OWN_PAGES:
+            continue
+        langs = privacy_langs(s)
+        paths = {l: f"/{s}/{lp(l)}privacy/" for l in langs}
+        for lang in langs:
+            body = open(os.path.join(LEGAL_DIR, s, f"privacy.{lang}.html"), encoding="utf-8").read()
+            title = f"{PRIVACY_LABEL[lang]} — {a['name']}"
+            page = head(lang, title, title, paths[lang], paths, app=s) + f"""
+<body data-app="{s}" class="app-page legal">
+{topbar(lang, paths, app=s)}
+<main class="wrap">
+  <a class="back" href="/{s}/{lp(lang)}">← {a['name']}</a>
+{body}</main>
+{site_foot(lang, app=s)}
+</body>
+</html>
+"""
+            write(f"{s}/{lp(lang)}privacy/index.html", page)
 
 
 # ---------------------------------------------------------------- migration FlowDay
@@ -221,6 +277,7 @@ def sitemap():
 if __name__ == "__main__":
     build_home()
     build_placeholders()
+    build_privacy()
     if len(sys.argv) > 1:
         migrate_flowday(sys.argv[1])
     else:

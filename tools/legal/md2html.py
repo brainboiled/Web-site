@@ -28,7 +28,7 @@ def md2html(t):
             flush(); out.append('<h1>' + inl(line[2:]) + '</h1>')
         elif line.startswith('## '):
             flush(); out.append('<h2>' + inl(line[3:]) + '</h2>')
-        elif re.match(r'^(Last updated|Dernière mise à jour)', line):
+        elif re.match(r'^(Last updated|Dernière mise à jour|Última actualización|Última atualização|Zuletzt aktualisiert|Ultimo aggiornamento|最終更新日|Ostatnia aktualizacja|Laatst bijgewerkt)', line):
             flush(); out.append('<div class="updated">' + inl(line) + '</div>')
         elif line.startswith('- '):
             if para:

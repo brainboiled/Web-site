@@ -10,7 +10,7 @@ Source du logo : création Canva « Identité visuelle Brainboiled ». Les fichi
 ## 1. Le nom
 
 - **BrainBoiled** dans tous les textes : un seul mot, B et B majuscules, comme les applis (FlowDay, MorseTree, RingWise). Jamais « Brainboiled », « brainboiled » ni « Brain Boiled » en deux mots, jamais « BB ».
-- Le logo dessiné (création Canva) reste en minuscules, « brainboiled » : c'est un dessin, il ne se réécrit pas.
+- Le logo (création Canva) s'écrit aussi « BrainBoiled ». Les fichiers du site en sont des exports : on ne le redessine jamais.
 - « brain » + « boiled » : un cerveau en ébullition, qui bouillonne d'idées.
 - Les adresses web et mail restent en minuscules (brainboiled.com).
 - Domaines : **brainboiled.com** (site) et **brainboiled.app** (redirige vers le .com).
@@ -30,7 +30,7 @@ Il s'écrit en une phrase, sans point final, en blanc et en gras sous le logo. L
 
 Le logo est celui de la création Canva « Identité visuelle Brainboiled ». **On ne le redessine pas** : les fichiers du site sont les exports Canva, dont seul le fond a été retiré.
 
-Un cerveau vu de dessus dont les deux hémisphères dessinent deux « b » reliés par un circuit, en dégradé cyan → violet, et le nom « BrainBoiled » : « brain » en blanc (bleu nuit sur fond clair), « boiled » en dégradé.
+Un cerveau vu de dessus dont les deux hémisphères dessinent deux « b » reliés par un circuit, en dégradé cyan → violet, et le nom « BrainBoiled » : « Brain » en blanc (bleu nuit sur fond clair), « Boiled » en dégradé.
 
 | Fichier (`assets/brand/`) | Page Canva | Usage |
 |---|---|---|
@@ -42,7 +42,7 @@ Un cerveau vu de dessus dont les deux hémisphères dessinent deux « b » reli�
 | `og-brainboiled.jpg` | 7 | Image de partage 1200 × 630 |
 
 Règles :
-- Zone de protection : au moins la hauteur du « b » de « boiled » autour du logo.
+- Zone de protection : au moins la hauteur du « B » de « Boiled » autour du logo.
 - Taille minimale : 28 px de haut pour le logo horizontal, 16 px pour le symbole.
 - Ne jamais redessiner, recolorer, inverser le dégradé, ajouter ombre ou contour, ni déformer.
 - Pour une nouvelle déclinaison, repartir de la création Canva.

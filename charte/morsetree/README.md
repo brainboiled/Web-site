@@ -6,7 +6,7 @@ L'identité est celle d'un **circuit imprimé de radioamateur, la nuit** : graph
 
 ## Le nom
 
-- On écrit **MorseTree** : un seul mot, M et T majuscules. Jamais « Morse Tree », « Morsetree » ni « MORSE TREE ». Dans les visuels en capitales : « MORSETREE ». L'adresse web est `/morsetree/`.
+- On écrit **MorseTree** : un seul mot, M et T majuscules. Jamais « Morse Tree », « Morsetree » ni « MORSE TREE ». Toujours avec cette casse, y compris dans les visuels : pas de version tout en capitales. L'adresse web est `/morsetree/`.
 - À mettre à jour : le nom affiché sous l'icône (`android:label="Morse Tree"`) et l'image de présentation, qui écrit encore « MORSE / TREE » sur deux lignes.
 - Invariable dans toutes les langues.
 - Éditeur : « une appli brainboiled ».
@@ -15,7 +15,7 @@ L'identité est celle d'un **circuit imprimé de radioamateur, la nuit** : graph
 
 - **Symbole** : une antenne en Y, reliée à gauche à un trait rouge (le tiret) et à droite à un point vert (le point), dans un cadre d'acier arrondi, sur graphite.
 - **Icône** : `play-store/icone-512.png` du dépôt MorseTree (copie web : `assets/apps/morsetree-icon-192.png`).
-- **Logo avec le nom** : antenne dorée + « MORSETREE » en Rajdhani Bold capitales espacées blanches, avec la ligne de tirets rouges et points verts.
+- **Logo avec le nom** : antenne dorée + « MorseTree » en Rajdhani Bold, avec la ligne de tirets rouges et points verts.
 - Le rouge est toujours le **trait**, le vert toujours le **point** : ne jamais les inverser.
 
 ## Les couleurs
@@ -36,7 +36,7 @@ Contraste : diode-verte sur graphite 10,2:1, blanc 15,9:1.
 
 ## La typographie
 
-- **Rajdhani** : Bold (700) en capitales espacées (0,08 em) pour le nom et les titres ; Medium pour les libellés de la carte.
+- **Rajdhani** : Bold (700) pour le nom et les titres ; Medium pour les libellés de la carte.
 - Sur le site, le texte courant est en Urbanist (voix commune brainboiled).
 - Les alphabets non latins des cartes (cyrillique, grec, japonais) utilisent les polices Noto correspondantes.
 
@@ -54,7 +54,7 @@ Contraste : diode-verte sur graphite 10,2:1, blanc 15,9:1.
 ## Les visuels du store
 
 - **Icône** 512 × 512.
-- **Image de présentation** 1024 × 500 : graphite avec grille, antenne dorée et ligne morse à gauche, « MORSETREE » en capitales sur une ligne, la carte animée inclinée à droite. Modèle actuel, à garder en corrigeant le nom.
+- **Image de présentation** 1024 × 500 : graphite avec grille, antenne dorée et ligne morse à gauche, « MorseTree » sur une ligne, la carte animée inclinée à droite. Modèle actuel, à garder en corrigeant le nom.
 - **Captures** 1080 × 1920 : titre en `diode-verte`, sous-titre en `blanc-ecran`, écran réel dans un téléphone coupé par le bas.
 
 ## L'éditeur

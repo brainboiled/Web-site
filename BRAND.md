@@ -122,8 +122,8 @@ Chaque appli a sa personnalité, mais toutes suivent les mêmes règles. C'est c
 | **FlowDay** | Bleu canard `#123F4E` | Soleil `#FFC438` | Turquoise clair `#7FD3E3` | Nunito ExtraBold | Le « f » qui part en flèche, point de départ jaune |
 | **Diafra** | Brun profond `#16110A` | Or `#F0C454` | Jaune collimateur `#FFC400` | Roboto Bold | Diaphragme or à six lames |
 | **Origins** | Nuit cosmique `#0B0E1C` | Or gravé `#D9B25F` | Lavande stellaire `#AEB8E6` | IM Fell English | Galaxie dorée dans un médaillon gravé |
-| **MorseTree** | Graphite `#11151E` | Vert diode `#3DDC84` | Or antenne `#E6C56F` | Rajdhani Bold capitales | Antenne, trait rouge et point vert |
-| **RingWise** | Charbon `#161A20` | Orange mouche `#FF6A2B` | Crème carton `#F3F0E4` | Barlow Condensed Bold capitales | Cible noire et crème, mouche orange |
+| **MorseTree** | Graphite `#11151E` | Vert diode `#3DDC84` | Or antenne `#E6C56F` | Rajdhani Bold | Antenne, trait rouge et point vert |
+| **RingWise** | Charbon `#161A20` | Orange mouche `#FF6A2B` | Crème carton `#F3F0E4` | Barlow Condensed Bold | Cible noire et crème, mouche orange |
 
 Les deux ors (Diafra et Origins) restent distincts : l'or de Diafra est vif et chaud sur un brun, celui d'Origins est patiné, sur un bleu nuit, avec une police à l'ancienne.
 

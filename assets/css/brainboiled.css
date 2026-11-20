@@ -92,12 +92,12 @@
 [data-app="morsetree"]{
   --app-fond:#11151E; --app-fond-2:#0A0D13; --app-surface:#1B2130; --app-trait:rgba(208,213,219,.14);
   --app-texte:#EDEFF2; --app-gris:#A3ABB8; --app-accent:#3DDC84; --app-accent-2:#E6C56F; --app-sur-accent:#0A0D13;
-  --app-titre:"Rajdhani",var(--font-brand); --app-titre-graisse:700; --app-titre-casse:uppercase; --app-titre-espace:.08em;
+  --app-titre:"Rajdhani",var(--font-brand); --app-titre-graisse:700; --app-titre-espace:.03em;
 }
 [data-app="ringwise"]{
   --app-fond:#161A20; --app-fond-2:#0E1115; --app-surface:#222830; --app-trait:rgba(243,240,228,.13);
   --app-texte:#F3F0E4; --app-gris:#B6B4AA; --app-accent:#FF6A2B; --app-accent-2:#F3F0E4; --app-sur-accent:#0E1115;
-  --app-titre:"Barlow Condensed",var(--font-brand); --app-titre-graisse:700; --app-titre-casse:uppercase; --app-titre-espace:.02em;
+  --app-titre:"Barlow Condensed",var(--font-brand); --app-titre-graisse:700; --app-titre-espace:.01em;
 }
 
 /* ---------- Base ---------- */

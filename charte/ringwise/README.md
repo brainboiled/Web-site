@@ -6,7 +6,7 @@ L'identité est celle du **pas de tir** : le noir et le crème du carton, l'oran
 
 ## Le nom
 
-- On écrit **RingWise** : R et W majuscules, en un mot. Dans les visuels, en capitales : « RINGWISE ».
+- On écrit **RingWise** : R et W majuscules, en un mot. Toujours avec cette casse, y compris dans les visuels : pas de version tout en capitales.
 - Titre sur le store : « RingWise – Score & Coach ».
 - Éditeur : « une appli brainboiled ».
 - Attention (voir `docs/play-store.md` du dépôt) : le nom commence par « Ring », marque très protégée en classe 9. Faire la recherche TMview/USPTO avant d'investir dans le logo définitif.
@@ -16,7 +16,7 @@ L'identité est celle du **pas de tir** : le noir et le crème du carton, l'oran
 - **Symbole** : un carton de tir (anneaux noirs et crème) avec la mouche orange au centre, et les silhouettes d'un tireur à la carabine, au pistolet et à l'arbalète.
 - **Icône** : `app/assets/icon/icon.png` du dépôt RingWise (copie web : `assets/apps/ringwise-icon-192.png`).
 - Recommandation : l'icône est très détaillée et se lit mal en 48 px. Garder la version actuelle pour le store et prévoir une **version simplifiée** (anneaux + mouche, sans silhouettes) pour le monochrome Android 13 et les petites tailles.
-- **Logo avec le nom** : l'icône suivie de « RINGWISE » en Barlow Condensed Bold crème.
+- **Logo avec le nom** : l'icône suivie de « RingWise » en Barlow Condensed Bold.
 
 ## Les couleurs
 
@@ -35,7 +35,7 @@ Contraste : mouche sur charbon 6,1:1, crème 15,3:1.
 
 ## La typographie
 
-- **Barlow Condensed** Bold (700) en capitales pour le nom, les titres et les **scores** (chiffres étroits, lisibles comme un tableau d'affichage).
+- **Barlow Condensed** Bold (700) pour le nom, les titres et les **scores** (chiffres étroits, lisibles comme un tableau d'affichage).
 - **IBM Plex Sans** pour le texte de l'appli (déjà utilisé dans le prototype).
 - Sur le site, le texte courant est en Urbanist (voix commune brainboiled).
 
@@ -54,7 +54,7 @@ Contraste : mouche sur charbon 6,1:1, crème 15,3:1.
 ## Les visuels du store
 
 - **Icône** 512 × 512.
-- **Image de présentation** 1024 × 500 : dégradé horizontal `charbon-clair` → `noir-carton`, icône à gauche, « RINGWISE » en `creme-carton`, sous-titre « Score & Coach » en `mouche`.
+- **Image de présentation** 1024 × 500 : dégradé horizontal `charbon-clair` → `noir-carton`, icône à gauche, « RingWise » en `mouche`, sous-titre « Score & Coach » en `mouche`.
 - **Captures** 1080 × 1920 (6 par langue, FR, EN, DE) : titre en `mouche`, sous-titre en `creme-carton`, écran réel dans un téléphone coupé par le bas.
 
 ## L'éditeur

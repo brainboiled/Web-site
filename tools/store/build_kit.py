@@ -106,7 +106,7 @@ def main(repo, visuels, out):
             shutil.copy(s, os.path.join(sd, f'{i}.jpg'))
     notes_all = '\n'.join(f'<{lc}>\n{v["play"]["notes"]}\n</{lc}>' for lc, v in L.items())
     write(os.path.join(gp, 'commun', 'notes-de-version-toutes-langues.txt'), notes_all)
-    langs_list = ', '.join(f'`{lc}`' for lc in L)
+    langs_list = ', '.join(f'`{lc}`' for lc in L if lc != k['default_lang']) or 'aucune'
     write(os.path.join(gp, '00-A-LIRE-Google-Play.md'), f"""
 # {app} — publication sur Google Play
 
@@ -115,7 +115,7 @@ Langue par défaut : {LANG_NAME[k['default_lang']]} (`{k['default_lang']}`). Aut
 
 ## Dans la Play Console, dans cet ordre
 
-1. **Créer l'application** : nom « {L[k['default_lang']]['play']['title']} », langue par défaut {LANG_NAME[k['default_lang']]}, *Application*, *{('Gratuite' if 'ratuit' in k['price'] else 'Payante')}*. Coche les déclarations (règles du programme, lois d'exportation américaines).
+1. **Créer l'application** : nom « {L[k['default_lang']]['play']['title']} », langue par défaut {LANG_NAME[k['default_lang']]}, *{k.get('play_type', 'Application')}*, *{('Gratuite' if 'ratuit' in k['price'] else 'Payante')}*. Coche les déclarations (règles du programme, lois d'exportation américaines).
 2. **Contenu de l'application** (menu *Règles et programmes > Contenu de l'application*) : suivre `commun/reponses-formulaires.md` (politique de confidentialité, accès, annonces, classification, public cible, sécurité des données).
 3. **Paramètres du Store** : `commun/coordonnees-et-categorie.md`.
 4. **Fiche principale du Play Store** (langue par défaut, dossier `{k['default_lang']}/`) :
